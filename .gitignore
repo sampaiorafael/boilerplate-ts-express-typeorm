@@ -1,0 +1,11 @@
+## Folder
+
+/node_modules
+/dist
+.vscode
+
+## Files
+
+.env
+desktop.ini
+
