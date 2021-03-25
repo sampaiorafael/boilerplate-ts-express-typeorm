@@ -18,9 +18,10 @@
 
 ## Architecture :hammer:
 
-- Repository layer
-- Service layer
 - Controller layer
+- Service layer
+- Repository layer
+- Entities layer
 - Scheme layer
 - Type layer
 
