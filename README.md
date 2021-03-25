@@ -6,7 +6,7 @@
 ## Author
 
 <a href="https://github.com/sampaiorafael" width="30px" height="30px" target="_blank">
-    <img alt="author" src="https://badges.pufler.dev/contributors/sampaiorafael/git-badges?size=50&padding=5&bots=true" />
+    <img alt="author" src="https://badges.pufler.dev/contributors/sampaiorafael/boilerplate-ts-express-typeorm?size=50&padding=5&bots=true" />
 </a>
 
 ## Main Technologies :pushpin:
