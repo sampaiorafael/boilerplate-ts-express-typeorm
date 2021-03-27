@@ -1,7 +1,6 @@
-import CarsInterface from '../types/Cars.type'
 import { CarsEntity } from '../entities/Cars.entity'
 import CarsRepository from '../repository/Cars.repository'
-
+import CarsInterface from '../types/Cars.type'
 
 class CarsService {
 

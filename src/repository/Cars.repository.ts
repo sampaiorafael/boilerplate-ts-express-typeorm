@@ -1,6 +1,5 @@
 import { EntityRepository, Repository, getRepository } from 'typeorm';
 
-
 import { CarsEntity } from '../entities/Cars.entity'
 import CarsInterface from '../types/Cars.type'
 

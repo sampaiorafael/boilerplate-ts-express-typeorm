@@ -1,8 +1,9 @@
 import { RequestHandler, Request, Response, NextFunction } from 'express';
 
 import CarScheme from '../schemes/Cars.scheme'
-import CarInterface from '../types/Cars.type';
 import CarsService from '../services/Cars.service'
+import CarInterface from '../types/Cars.type';
+
 
 class CarsController {
 
