@@ -1,9 +1,11 @@
 import { Router } from 'express'
 
-import cars from './cars.route'
+import status from './status.route'
+import accounts from './accounts.route'
 
 const routes = Router()
 
-routes.use('/cars', cars)
+routes.use('/status', status)
+routes.use('/accounts', accounts)
 
 export default routes
