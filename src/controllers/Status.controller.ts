@@ -1,4 +1,5 @@
 import { RequestHandler, Request, Response, NextFunction } from 'express';
+import { uptime, hostname } from 'os'
 class StatusController {
 
     public async status (req: Request, res: Response, next: NextFunction): Promise<Response> {
@@ -7,9 +8,9 @@ class StatusController {
             datetime: new Date(),
             requester: {
                 ip: req.headers['x-forwarded-for'],
-                ip2: req.connection.remoteAddress,
-                ip3: req.socket.remoteAddress
+                socket: req.socket.remoteAddress
             },
+            uptime: (uptime() / 60) / 60,
         })
     }
 
