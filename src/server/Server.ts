@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import { createConnection } from 'typeorm';
 
 import routes from '../routes/routes'
+import configs from '../configs/configs'
 
 class Server {
 
@@ -10,9 +11,14 @@ class Server {
 
     constructor() {
         this.express = express()
+        this.configs()
         this.middlewares()
         this.routes()
         this.database()
+    }
+
+    private configs () {
+        this.express.set('port', configs.Server.port)
     }
 
     private middlewares() {
