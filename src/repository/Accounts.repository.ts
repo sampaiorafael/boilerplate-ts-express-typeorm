@@ -14,7 +14,7 @@ class AccountsRepository extends Repository<AccountsEntity> {
         try {
             newAccont = await repository.save(data)
         } catch (err) {
-            throw err
+            throw err.message
         }
 
         return newAccont

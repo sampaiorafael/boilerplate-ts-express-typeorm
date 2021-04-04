@@ -19,7 +19,7 @@ class AccountsController {
         try {
             newAccount = await AccountsService.insertNewAccount(value)
         } catch (err) {
-            return res.status(400).json({status: 'failed', msg: err.message})
+            return res.status(400).json({status: 'failed', msg: err})
         }
 
         return res.status(201).json({status: 'success', data: newAccount})
